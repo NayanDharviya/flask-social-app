@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <form action="/signin_success" method="post">
+        <!-- <form action="https://flask-social-app.herokuapp.com/signin_success" method="post"> -->
+            {% if signin==False %}
+            <h1>User Already Exist, Please signin with another email or login</h1>
+            Enter Email
+            <input type="text" name="email"> </br></br>
+            Enter Password
+            <input type="password" name="password"></br></br>
+            <input type="submit" value="Signin">
+            <!-- <a href="/login"><button>Login</button></a> -->
+            <a href="/login">Login</a>
+            <a href="/">Home</a>
+            {% else %}
+            Enter Email
+            <input type="text" name="email"></br></br>
+            Enter Password
+            <input type="password" name="password"></br></br>
+            <input type="submit" value="Signin">
+            <a href="/"><button>Home</button></a>
+            {% endif %}
+        </form>
+    </body>
+</html>
+
+
+<!-- word in string -->
+<!-- count of word -->

@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <form action="/login_success" method="post">
+            {% if fail == "email_wrong" %}
+            <h1> Please Enter correct email</h1>
+            Enter Email
+            <input type="text" name="email">
+            Enter Password
+            <input type="password" name="password">
+            <input type="submit" value="Login"></br></br>
+            <a href="/signin">Signin</a>
+            <a href="/">Home</a>
+
+            {% elif fail == "password_wrong" %}
+            <h1> Please Enter correct Password</h1>
+            Enter Email
+            <input type="text" name="email">
+            Enter Password
+            <input type="password" name="password">
+            <input type="submit" value="Login"></br></br>
+            <a href="/signin">Signin</a>
+            <a href="/">Home</a>
+
+
+            {% else %}
+            Enter Email
+            <input type="text" name="email">
+            Enter Password
+            <input type="password" name="password">
+            <input type="submit" value="Login"><br><br>
+            <a href="/signin">Signin</a>
+            <a href="/">Home</a>
+            {% endif %}
+
+        </form>
+    </body>
+</html>
+
+
+
